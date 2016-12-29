@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--공지사항 리스트의 디자인. 나중에 아이콘 수정이 이루어질 것이다.-->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -30,7 +31,7 @@
                 android:textColor="@color/Black"
                 android:textStyle="bold"
                 android:singleLine="true"
-                android:textSize="20sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:text="내용을 입력하세요"
@@ -38,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewBody"
                 android:textColor="@color/Black"
-                android:textSize="18sp" />
+                android:textSize="18dp" />
         </LinearLayout>
 
         <RelativeLayout
@@ -49,13 +50,13 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:id="@+id/imageView2"
+                android:id="@+id/imgSeperateWithLine"
                 android:background="@color/Black" />
 
             <ImageView
                 android:layout_height="25dp"
                 app:srcCompat="@mipmap/icon_calendar"
-                android:id="@+id/imageView5"
+                android:id="@+id/imgCalendarShowNoticeDate"
                 android:layout_centerHorizontal="false"
                 android:layout_centerInParent="false"
                 android:layout_alignParentBottom="false"
@@ -66,15 +67,15 @@
                 android:text="날짜"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textViewDate"
+                android:id="@+id/txtNoticeDate"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="false"
                 android:layout_marginLeft="40dp"
                 android:textColor="@color/clrTextColorDeepDark"
-                android:textSize="18sp" />
+                android:textSize="18dp" />
 
             <ImageView
-                android:id="@+id/imageViewType"
+                android:id="@+id/imgNoticeType"
                 android:layout_alignParentRight="true"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -86,6 +87,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/buttonClick"
+        android:id="@+id/btnEachNoticeItem"
         android:background="@drawable/button_mask" />
 </RelativeLayout>
